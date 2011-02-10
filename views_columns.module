@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implementation of hook_views_api().
+ */
+function views_columns_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'views_columns'),
+  );
+}

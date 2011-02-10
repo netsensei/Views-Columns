@@ -1,0 +1,5 @@
+; $Id:$
+name = Views Columns
+description = Style plugin for Views: split rows into columns
+package = Views
+core = 6.x
