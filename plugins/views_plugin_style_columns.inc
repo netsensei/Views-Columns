@@ -7,15 +7,13 @@
  */
 
 /**
- * Default style plugin to render a view as columns that can be stacked
+ * Default style plugin to render a view as columns that can be stacked or floated
  * decorations.
  *
  * @ingroup views_style_plugins
  */
 class views_plugin_style_columns extends views_plugin_style {
-  /**
-   * Set default options
-   */
+
   function option_definition() {
     $options = parent::option_definition();
     $options['columns'] = array('default' => '1');
