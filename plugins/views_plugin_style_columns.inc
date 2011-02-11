@@ -19,6 +19,14 @@ class views_plugin_style_columns extends views_plugin_style {
   function option_definition() {
     $options = parent::option_definition();
     $options['columns'] = array('default' => '1');
+    return $options;
+  }
+  
+  /**
+   * Set default options
+   */
+  function options(&$options) {
+    parent::options($options);
   }
 
   function options_form(&$form, &$form_state) {
