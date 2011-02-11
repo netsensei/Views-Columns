@@ -13,7 +13,7 @@ function template_preprocess_views_view_columns(&$vars) {
   $row_count = count($rows);
   $offset = 0;
   
-  $items_per_column = floor($row_count / $column_count);
+  $items_per_column = ceil($row_count / $column_count);
 
   for ($i = 1; $i <= $column_count; $i++) {
     $columns[] = array_slice($rows, $offset, $items_per_column); 
